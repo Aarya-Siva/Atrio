@@ -1,0 +1,37 @@
+# macOS and IDE state
+.DS_Store
+**/xcuserdata/
+*.xcuserstate
+.vscode/
+.idea/
+
+# Xcode and Swift build output
+.build/
+**/.build/
+.swiftpm/
+**/.swiftpm/
+DerivedData/
+build/
+*.xcarchive
+*.ipa
+*.dSYM/
+
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local credentials and signing material
+.env
+.env.*
+!.env.example
+*.p12
+*.p8
+*.mobileprovision
+
+# Downloaded participant data and generated per-window research data
+*.mat
+*.npz
+Research/Model/artifacts/features.csv

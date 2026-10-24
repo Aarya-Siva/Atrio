@@ -1,0 +1,13 @@
+{
+  "version": "liu-window-xgb-v1",
+  "algorithmVersion": "pulse-v1",
+  "featureVersion": "pulse-window-v1",
+  "evaluationSummary": "Held-out source-sensor windows: AUC 0.941. Not evaluated on iPhone recordings.",
+  "lowerThreshold": 0.45545454545454545,
+  "upperThreshold": 0.895959595959596,
+  "windowSeconds": 10,
+  "minimumWindows": 2,
+  "sourceDomain": "Liu et al. 100 Hz source-sensor PPG; no ECG-confirmed iPhone validation",
+  "coreMLParityVerified": true,
+  "modelSHA256": "5029d31b73de87e5d17b90f18315c6b5352b55b5c1d014a226ee99b7f4c144b2"
+}

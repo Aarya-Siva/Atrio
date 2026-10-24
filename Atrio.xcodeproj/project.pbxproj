@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0000000000000000000000C8 /* Atrio.swiftpm/Atrio/App/AppRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000064 /* Atrio.swiftpm/Atrio/App/AppRootView.swift */; };
+		0000000000000000000000C9 /* Atrio.swiftpm/Atrio/App/AtrioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000065 /* Atrio.swiftpm/Atrio/App/AtrioApp.swift */; };
+		0000000000000000000000CA /* Atrio.swiftpm/Atrio/Components/PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000066 /* Atrio.swiftpm/Atrio/Components/PrimaryButton.swift */; };
+		0000000000000000000000CB /* Atrio.swiftpm/Atrio/Components/SectionHeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000067 /* Atrio.swiftpm/Atrio/Components/SectionHeading.swift */; };
+		0000000000000000000000CC /* Atrio.swiftpm/Atrio/Models/AppNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000068 /* Atrio.swiftpm/Atrio/Models/AppNavigation.swift */; };
+		0000000000000000000000CD /* Atrio.swiftpm/Atrio/Theme/AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000069 /* Atrio.swiftpm/Atrio/Theme/AppColors.swift */; };
+		0000000000000000000000CE /* Atrio.swiftpm/Atrio/Theme/AppTypography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000006A /* Atrio.swiftpm/Atrio/Theme/AppTypography.swift */; };
+		0000000000000000000000CF /* Atrio.swiftpm/Atrio/ViewModels/AppNavigationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000006B /* Atrio.swiftpm/Atrio/ViewModels/AppNavigationModel.swift */; };
+		0000000000000000000000D0 /* Atrio.swiftpm/Atrio/Views/HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000006C /* Atrio.swiftpm/Atrio/Views/HistoryView.swift */; };
+		0000000000000000000000D1 /* Atrio.swiftpm/Atrio/Views/HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000006D /* Atrio.swiftpm/Atrio/Views/HomeView.swift */; };
+		0000000000000000000000D2 /* Atrio.swiftpm/Atrio/Views/PreparationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000006E /* Atrio.swiftpm/Atrio/Views/PreparationView.swift */; };
+		00000000000000000000012D /* Atrio.swiftpm/Atrio/Resources/Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000012C /* Atrio.swiftpm/Atrio/Resources/Assets.xcassets */; };
+		0000000000000000000001B1 /* Atrio.swiftpm/Atrio/Components/PPGWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000001B0 /* Atrio.swiftpm/Atrio/Components/PPGWaveformView.swift */; };
+		0000000000000000000001F5 /* Atrio.swiftpm/Atrio/Components/CameraPermissionStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000001F4 /* Atrio.swiftpm/Atrio/Components/CameraPermissionStatusView.swift */; };
+		0000000000000000000001F7 /* Atrio.swiftpm/Atrio/Components/PreparationStepRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000001F6 /* Atrio.swiftpm/Atrio/Components/PreparationStepRow.swift */; };
+		0000000000000000000001F9 /* Atrio.swiftpm/Atrio/Components/FingerPlacementIllustration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000001F8 /* Atrio.swiftpm/Atrio/Components/FingerPlacementIllustration.swift */; };
+		0000000000000000000001FB /* Atrio.swiftpm/Atrio/Services/CameraPermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000001FA /* Atrio.swiftpm/Atrio/Services/CameraPermissionManager.swift */; };
+		0000000000000000000001FD /* Atrio.swiftpm/Atrio/Services/CameraHardwareService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000001FC /* Atrio.swiftpm/Atrio/Services/CameraHardwareService.swift */; };
+		0000000000000000000001FF /* Atrio.swiftpm/Atrio/ViewModels/PreparationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000001FE /* Atrio.swiftpm/Atrio/ViewModels/PreparationViewModel.swift */; };
+		000000000000000000000201 /* Atrio.swiftpm/Atrio/Views/RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000200 /* Atrio.swiftpm/Atrio/Views/RecordingView.swift */; };
+		0000000000000000000002BD /* Atrio.swiftpm/Atrio/Views/ProcessingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000002BC /* Atrio.swiftpm/Atrio/Views/ProcessingView.swift */; };
+		0000000000000000000002BF /* Atrio.swiftpm/Atrio/Components/LivePPGChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000002BE /* Atrio.swiftpm/Atrio/Components/LivePPGChart.swift */; };
+		0000000000000000000002C1 /* Atrio.swiftpm/Atrio/Components/RecordingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000002C0 /* Atrio.swiftpm/Atrio/Components/RecordingTimerView.swift */; };
+		0000000000000000000002C3 /* Atrio.swiftpm/Atrio/Components/SignalStatusIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000002C2 /* Atrio.swiftpm/Atrio/Components/SignalStatusIndicator.swift */; };
+		0000000000000000000002C5 /* Atrio.swiftpm/Atrio/Models/PPGRecording.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000002C4 /* Atrio.swiftpm/Atrio/Models/PPGRecording.swift */; };
+		0000000000000000000002C7 /* Atrio.swiftpm/Atrio/Models/PPGSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000002C6 /* Atrio.swiftpm/Atrio/Models/PPGSample.swift */; };
+		0000000000000000000002C9 /* Atrio.swiftpm/Atrio/Models/RecordingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000002C8 /* Atrio.swiftpm/Atrio/Models/RecordingState.swift */; };
+		0000000000000000000002CB /* Atrio.swiftpm/Atrio/ViewModels/RecordingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000002CA /* Atrio.swiftpm/Atrio/ViewModels/RecordingViewModel.swift */; };
+		0000000000000000000002CD /* Atrio.swiftpm/Atrio/Services/FingerDetectionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000002CC /* Atrio.swiftpm/Atrio/Services/FingerDetectionService.swift */; };
+		0000000000000000000002CF /* Atrio.swiftpm/Atrio/Services/OpticalPlotPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000002CE /* Atrio.swiftpm/Atrio/Services/OpticalPlotPoint.swift */; };
+		0000000000000000000002D1 /* Atrio.swiftpm/Atrio/Services/PPGCameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000002D0 /* Atrio.swiftpm/Atrio/Services/PPGCameraService.swift */; };
+		0000000000000000000002D3 /* Atrio.swiftpm/Atrio/Services/PPGRecordingAccumulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000002D2 /* Atrio.swiftpm/Atrio/Services/PPGRecordingAccumulator.swift */; };
+		0000000000000000000002D5 /* Atrio.swiftpm/Atrio/Services/PPGSignalExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0000000000000000000002D4 /* Atrio.swiftpm/Atrio/Services/PPGSignalExtractor.swift */; };
+		27B16993311EEB87CD1E1FDC /* Atrio.swiftpm/Atrio/Services/ResearchPDFRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F66282CDF9AF866DCDCA6D4 /* Atrio.swiftpm/Atrio/Services/ResearchPDFRenderer.swift */; };
+		30F28AF61A954194A45E04B0 /* Atrio.swiftpm/Atrio/Resources/AFibResearch.explainer.json in Resources */ = {isa = PBXBuildFile; fileRef = DE7BC43C716042D6BEBC9328 /* Atrio.swiftpm/Atrio/Resources/AFibResearch.explainer.json */; };
+		5C6A1C531EA94F4D804AA41E /* Research/Model/artifacts/AFibResearch.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = BAC3114DCA1549868BBB4BCF /* Research/Model/artifacts/AFibResearch.mlmodel */; };
+		6DF2A30630CEC80E5358F623 /* Atrio.swiftpm/Atrio/ViewModels/HistoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF92FD09428FDF66CE12F88 /* Atrio.swiftpm/Atrio/ViewModels/HistoryModel.swift */; };
+		745949C85048B6096D777517 /* Atrio.swiftpm/Atrio/Views/ResearchUITestHarness.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE50EB7036FA68F4E0FD0A5D /* Atrio.swiftpm/Atrio/Views/ResearchUITestHarness.swift */; };
+		9D885EB19A1FEA2D19C3108F /* Atrio.swiftpm/Atrio/Views/MeasurementDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2CC58DB4B8123F00DF2451 /* Atrio.swiftpm/Atrio/Views/MeasurementDetailView.swift */; };
+		A2EDB3604530461CE233E089 /* Atrio.swiftpm/Atrio/Services/ResearchExport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8736C9501F68DEEB9EDFE94B /* Atrio.swiftpm/Atrio/Services/ResearchExport.swift */; };
+		A80C42FE7537697F17E33934 /* Atrio.swiftpm/Atrio/Services/MeasurementRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9AECEEE4FF28495CE498815 /* Atrio.swiftpm/Atrio/Services/MeasurementRepository.swift */; };
+		BCFF07713D3EE277591D17EE /* Atrio.swiftpm/Atrio/Views/ExportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E641E813220C301830BFEEF1 /* Atrio.swiftpm/Atrio/Views/ExportView.swift */; };
+		E117DB8BAD1E82B3FA374FAF /* Atrio.swiftpm/Atrio/Services/PulseAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2016B97C5FA6E326BED4AD4A /* Atrio.swiftpm/Atrio/Services/PulseAnalyzer.swift */; };
+		E50B19647B224ADAA8FDD563 /* Atrio.swiftpm/Atrio/Resources/AFibResearch.json in Resources */ = {isa = PBXBuildFile; fileRef = 343CA4C8847C4A7B96384AD3 /* Atrio.swiftpm/Atrio/Resources/AFibResearch.json */; };
+		EB70767D853DE86E83F7B74C /* Atrio.swiftpm/Atrio/Services/RhythmModelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F7DF3C755A996A21DAB6B0 /* Atrio.swiftpm/Atrio/Services/RhythmModelService.swift */; };
+		FBAA77D6CBCBAC77C9826497 /* Atrio.swiftpm/Atrio/Models/PulseAnalysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = D961E94787CAC01BB5ED23F8 /* Atrio.swiftpm/Atrio/Models/PulseAnalysis.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000064 /* Atrio.swiftpm/Atrio/App/AppRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/App/AppRootView.swift; sourceTree = SOURCE_ROOT; };
+		000000000000000000000065 /* Atrio.swiftpm/Atrio/App/AtrioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/App/AtrioApp.swift; sourceTree = SOURCE_ROOT; };
+		000000000000000000000066 /* Atrio.swiftpm/Atrio/Components/PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Components/PrimaryButton.swift; sourceTree = SOURCE_ROOT; };
+		000000000000000000000067 /* Atrio.swiftpm/Atrio/Components/SectionHeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Components/SectionHeading.swift; sourceTree = SOURCE_ROOT; };
+		000000000000000000000068 /* Atrio.swiftpm/Atrio/Models/AppNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Models/AppNavigation.swift; sourceTree = SOURCE_ROOT; };
+		000000000000000000000069 /* Atrio.swiftpm/Atrio/Theme/AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Theme/AppColors.swift; sourceTree = SOURCE_ROOT; };
+		00000000000000000000006A /* Atrio.swiftpm/Atrio/Theme/AppTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Theme/AppTypography.swift; sourceTree = SOURCE_ROOT; };
+		00000000000000000000006B /* Atrio.swiftpm/Atrio/ViewModels/AppNavigationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/ViewModels/AppNavigationModel.swift; sourceTree = SOURCE_ROOT; };
+		00000000000000000000006C /* Atrio.swiftpm/Atrio/Views/HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Views/HistoryView.swift; sourceTree = SOURCE_ROOT; };
+		00000000000000000000006D /* Atrio.swiftpm/Atrio/Views/HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Views/HomeView.swift; sourceTree = SOURCE_ROOT; };
+		00000000000000000000006E /* Atrio.swiftpm/Atrio/Views/PreparationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Views/PreparationView.swift; sourceTree = SOURCE_ROOT; };
+		00000000000000000000012C /* Atrio.swiftpm/Atrio/Resources/Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Atrio.swiftpm/Atrio/Resources/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		00000000000000000000012E /* Atrio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = Atrio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0000000000000000000001A5 /* Configuration/Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configuration/Info.plist; sourceTree = SOURCE_ROOT; };
+		0000000000000000000001B0 /* Atrio.swiftpm/Atrio/Components/PPGWaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Components/PPGWaveformView.swift; sourceTree = SOURCE_ROOT; };
+		0000000000000000000001F4 /* Atrio.swiftpm/Atrio/Components/CameraPermissionStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Components/CameraPermissionStatusView.swift; sourceTree = SOURCE_ROOT; };
+		0000000000000000000001F6 /* Atrio.swiftpm/Atrio/Components/PreparationStepRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Components/PreparationStepRow.swift; sourceTree = SOURCE_ROOT; };
+		0000000000000000000001F8 /* Atrio.swiftpm/Atrio/Components/FingerPlacementIllustration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Components/FingerPlacementIllustration.swift; sourceTree = SOURCE_ROOT; };
+		0000000000000000000001FA /* Atrio.swiftpm/Atrio/Services/CameraPermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Services/CameraPermissionManager.swift; sourceTree = SOURCE_ROOT; };
+		0000000000000000000001FC /* Atrio.swiftpm/Atrio/Services/CameraHardwareService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Services/CameraHardwareService.swift; sourceTree = SOURCE_ROOT; };
+		0000000000000000000001FE /* Atrio.swiftpm/Atrio/ViewModels/PreparationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/ViewModels/PreparationViewModel.swift; sourceTree = SOURCE_ROOT; };
+		000000000000000000000200 /* Atrio.swiftpm/Atrio/Views/RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Views/RecordingView.swift; sourceTree = SOURCE_ROOT; };
+		0000000000000000000002BC /* Atrio.swiftpm/Atrio/Views/ProcessingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Views/ProcessingView.swift; sourceTree = SOURCE_ROOT; };
+		0000000000000000000002BE /* Atrio.swiftpm/Atrio/Components/LivePPGChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Components/LivePPGChart.swift; sourceTree = SOURCE_ROOT; };
+		0000000000000000000002C0 /* Atrio.swiftpm/Atrio/Components/RecordingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Components/RecordingTimerView.swift; sourceTree = SOURCE_ROOT; };
+		0000000000000000000002C2 /* Atrio.swiftpm/Atrio/Components/SignalStatusIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Components/SignalStatusIndicator.swift; sourceTree = SOURCE_ROOT; };
+		0000000000000000000002C4 /* Atrio.swiftpm/Atrio/Models/PPGRecording.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Models/PPGRecording.swift; sourceTree = SOURCE_ROOT; };
+		0000000000000000000002C6 /* Atrio.swiftpm/Atrio/Models/PPGSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Models/PPGSample.swift; sourceTree = SOURCE_ROOT; };
+		0000000000000000000002C8 /* Atrio.swiftpm/Atrio/Models/RecordingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Models/RecordingState.swift; sourceTree = SOURCE_ROOT; };
+		0000000000000000000002CA /* Atrio.swiftpm/Atrio/ViewModels/RecordingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/ViewModels/RecordingViewModel.swift; sourceTree = SOURCE_ROOT; };
+		0000000000000000000002CC /* Atrio.swiftpm/Atrio/Services/FingerDetectionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Services/FingerDetectionService.swift; sourceTree = SOURCE_ROOT; };
+		0000000000000000000002CE /* Atrio.swiftpm/Atrio/Services/OpticalPlotPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Services/OpticalPlotPoint.swift; sourceTree = SOURCE_ROOT; };
+		0000000000000000000002D0 /* Atrio.swiftpm/Atrio/Services/PPGCameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Services/PPGCameraService.swift; sourceTree = SOURCE_ROOT; };
+		0000000000000000000002D2 /* Atrio.swiftpm/Atrio/Services/PPGRecordingAccumulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Services/PPGRecordingAccumulator.swift; sourceTree = SOURCE_ROOT; };
+		0000000000000000000002D4 /* Atrio.swiftpm/Atrio/Services/PPGSignalExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Services/PPGSignalExtractor.swift; sourceTree = SOURCE_ROOT; };
+		2016B97C5FA6E326BED4AD4A /* Atrio.swiftpm/Atrio/Services/PulseAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Services/PulseAnalyzer.swift; sourceTree = SOURCE_ROOT; };
+		343CA4C8847C4A7B96384AD3 /* Atrio.swiftpm/Atrio/Resources/AFibResearch.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Atrio.swiftpm/Atrio/Resources/AFibResearch.json; sourceTree = SOURCE_ROOT; };
+		8736C9501F68DEEB9EDFE94B /* Atrio.swiftpm/Atrio/Services/ResearchExport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Services/ResearchExport.swift; sourceTree = SOURCE_ROOT; };
+		8A2CC58DB4B8123F00DF2451 /* Atrio.swiftpm/Atrio/Views/MeasurementDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Views/MeasurementDetailView.swift; sourceTree = SOURCE_ROOT; };
+		8F66282CDF9AF866DCDCA6D4 /* Atrio.swiftpm/Atrio/Services/ResearchPDFRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Services/ResearchPDFRenderer.swift; sourceTree = SOURCE_ROOT; };
+		B9F7DF3C755A996A21DAB6B0 /* Atrio.swiftpm/Atrio/Services/RhythmModelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Services/RhythmModelService.swift; sourceTree = SOURCE_ROOT; };
+		BAC3114DCA1549868BBB4BCF /* Research/Model/artifacts/AFibResearch.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Research/Model/artifacts/AFibResearch.mlmodel; sourceTree = SOURCE_ROOT; };
+		BE50EB7036FA68F4E0FD0A5D /* Atrio.swiftpm/Atrio/Views/ResearchUITestHarness.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Views/ResearchUITestHarness.swift; sourceTree = SOURCE_ROOT; };
+		C9AECEEE4FF28495CE498815 /* Atrio.swiftpm/Atrio/Services/MeasurementRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Services/MeasurementRepository.swift; sourceTree = SOURCE_ROOT; };
+		CEF92FD09428FDF66CE12F88 /* Atrio.swiftpm/Atrio/ViewModels/HistoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/ViewModels/HistoryModel.swift; sourceTree = SOURCE_ROOT; };
+		D961E94787CAC01BB5ED23F8 /* Atrio.swiftpm/Atrio/Models/PulseAnalysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Models/PulseAnalysis.swift; sourceTree = SOURCE_ROOT; };
+		DE7BC43C716042D6BEBC9328 /* Atrio.swiftpm/Atrio/Resources/AFibResearch.explainer.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Atrio.swiftpm/Atrio/Resources/AFibResearch.explainer.json; sourceTree = SOURCE_ROOT; };
+		E641E813220C301830BFEEF1 /* Atrio.swiftpm/Atrio/Views/ExportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atrio.swiftpm/Atrio/Views/ExportView.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000000000000000000006 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000190 /* App */,
+				000000000000000000000191 /* Views */,
+				000000000000000000000192 /* Components */,
+				000000000000000000000193 /* Theme */,
+				000000000000000000000194 /* Models */,
+				000000000000000000000195 /* ViewModels */,
+				000000000000000000000196 /* Resources */,
+				000000000000000000000197 /* Services */,
+				0000000000000000000001A6 /* Configuration */,
+				000000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		000000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000012E /* Atrio.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		000000000000000000000190 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000064 /* Atrio.swiftpm/Atrio/App/AppRootView.swift */,
+				000000000000000000000065 /* Atrio.swiftpm/Atrio/App/AtrioApp.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		000000000000000000000191 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE50EB7036FA68F4E0FD0A5D /* Atrio.swiftpm/Atrio/Views/ResearchUITestHarness.swift */,
+				8A2CC58DB4B8123F00DF2451 /* Atrio.swiftpm/Atrio/Views/MeasurementDetailView.swift */,
+				E641E813220C301830BFEEF1 /* Atrio.swiftpm/Atrio/Views/ExportView.swift */,
+				0000000000000000000002BC /* Atrio.swiftpm/Atrio/Views/ProcessingView.swift */,
+				000000000000000000000200 /* Atrio.swiftpm/Atrio/Views/RecordingView.swift */,
+				00000000000000000000006C /* Atrio.swiftpm/Atrio/Views/HistoryView.swift */,
+				00000000000000000000006D /* Atrio.swiftpm/Atrio/Views/HomeView.swift */,
+				00000000000000000000006E /* Atrio.swiftpm/Atrio/Views/PreparationView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		000000000000000000000192 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				0000000000000000000002C2 /* Atrio.swiftpm/Atrio/Components/SignalStatusIndicator.swift */,
+				0000000000000000000002C0 /* Atrio.swiftpm/Atrio/Components/RecordingTimerView.swift */,
+				0000000000000000000002BE /* Atrio.swiftpm/Atrio/Components/LivePPGChart.swift */,
+				0000000000000000000001F8 /* Atrio.swiftpm/Atrio/Components/FingerPlacementIllustration.swift */,
+				0000000000000000000001F6 /* Atrio.swiftpm/Atrio/Components/PreparationStepRow.swift */,
+				0000000000000000000001F4 /* Atrio.swiftpm/Atrio/Components/CameraPermissionStatusView.swift */,
+				000000000000000000000066 /* Atrio.swiftpm/Atrio/Components/PrimaryButton.swift */,
+				000000000000000000000067 /* Atrio.swiftpm/Atrio/Components/SectionHeading.swift */,
+				0000000000000000000001B0 /* Atrio.swiftpm/Atrio/Components/PPGWaveformView.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		000000000000000000000193 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000069 /* Atrio.swiftpm/Atrio/Theme/AppColors.swift */,
+				00000000000000000000006A /* Atrio.swiftpm/Atrio/Theme/AppTypography.swift */,
+			);
+			name = Theme;
+			sourceTree = "<group>";
+		};
+		000000000000000000000194 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D961E94787CAC01BB5ED23F8 /* Atrio.swiftpm/Atrio/Models/PulseAnalysis.swift */,
+				0000000000000000000002C8 /* Atrio.swiftpm/Atrio/Models/RecordingState.swift */,
+				0000000000000000000002C6 /* Atrio.swiftpm/Atrio/Models/PPGSample.swift */,
+				0000000000000000000002C4 /* Atrio.swiftpm/Atrio/Models/PPGRecording.swift */,
+				000000000000000000000068 /* Atrio.swiftpm/Atrio/Models/AppNavigation.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		000000000000000000000195 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CEF92FD09428FDF66CE12F88 /* Atrio.swiftpm/Atrio/ViewModels/HistoryModel.swift */,
+				0000000000000000000002CA /* Atrio.swiftpm/Atrio/ViewModels/RecordingViewModel.swift */,
+				0000000000000000000001FE /* Atrio.swiftpm/Atrio/ViewModels/PreparationViewModel.swift */,
+				00000000000000000000006B /* Atrio.swiftpm/Atrio/ViewModels/AppNavigationModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		000000000000000000000196 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DE7BC43C716042D6BEBC9328 /* Atrio.swiftpm/Atrio/Resources/AFibResearch.explainer.json */,
+				343CA4C8847C4A7B96384AD3 /* Atrio.swiftpm/Atrio/Resources/AFibResearch.json */,
+				BAC3114DCA1549868BBB4BCF /* Research/Model/artifacts/AFibResearch.mlmodel */,
+				00000000000000000000012C /* Atrio.swiftpm/Atrio/Resources/Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		000000000000000000000197 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B9F7DF3C755A996A21DAB6B0 /* Atrio.swiftpm/Atrio/Services/RhythmModelService.swift */,
+				8F66282CDF9AF866DCDCA6D4 /* Atrio.swiftpm/Atrio/Services/ResearchPDFRenderer.swift */,
+				8736C9501F68DEEB9EDFE94B /* Atrio.swiftpm/Atrio/Services/ResearchExport.swift */,
+				2016B97C5FA6E326BED4AD4A /* Atrio.swiftpm/Atrio/Services/PulseAnalyzer.swift */,
+				C9AECEEE4FF28495CE498815 /* Atrio.swiftpm/Atrio/Services/MeasurementRepository.swift */,
+				0000000000000000000002D4 /* Atrio.swiftpm/Atrio/Services/PPGSignalExtractor.swift */,
+				0000000000000000000002D2 /* Atrio.swiftpm/Atrio/Services/PPGRecordingAccumulator.swift */,
+				0000000000000000000002D0 /* Atrio.swiftpm/Atrio/Services/PPGCameraService.swift */,
+				0000000000000000000002CE /* Atrio.swiftpm/Atrio/Services/OpticalPlotPoint.swift */,
+				0000000000000000000002CC /* Atrio.swiftpm/Atrio/Services/FingerDetectionService.swift */,
+				0000000000000000000001FC /* Atrio.swiftpm/Atrio/Services/CameraHardwareService.swift */,
+				0000000000000000000001FA /* Atrio.swiftpm/Atrio/Services/CameraPermissionManager.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		0000000000000000000001A6 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				0000000000000000000001A5 /* Configuration/Info.plist */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000004 /* Atrio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00000000000000000000000B /* Build configuration list for PBXNativeTarget "Atrio" */;
+			buildPhases = (
+				000000000000000000000005 /* Sources */,
+				000000000000000000000006 /* Frameworks */,
+				000000000000000000000007 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Atrio;
+			productName = Atrio;
+			productReference = 00000000000000000000012E /* Atrio.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2710;
+			};
+			buildConfigurationList = 00000000000000000000000A /* Build configuration list for PBXProject "Atrio" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 000000000000000000000002;
+			productRefGroup = 000000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000000000000000004 /* Atrio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000000000000000000000007 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30F28AF61A954194A45E04B0 /* Atrio.swiftpm/Atrio/Resources/AFibResearch.explainer.json in Resources */,
+				E50B19647B224ADAA8FDD563 /* Atrio.swiftpm/Atrio/Resources/AFibResearch.json in Resources */,
+				00000000000000000000012D /* Atrio.swiftpm/Atrio/Resources/Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000000000005 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C6A1C531EA94F4D804AA41E /* Research/Model/artifacts/AFibResearch.mlmodel in Sources */,
+				745949C85048B6096D777517 /* Atrio.swiftpm/Atrio/Views/ResearchUITestHarness.swift in Sources */,
+				9D885EB19A1FEA2D19C3108F /* Atrio.swiftpm/Atrio/Views/MeasurementDetailView.swift in Sources */,
+				BCFF07713D3EE277591D17EE /* Atrio.swiftpm/Atrio/Views/ExportView.swift in Sources */,
+				6DF2A30630CEC80E5358F623 /* Atrio.swiftpm/Atrio/ViewModels/HistoryModel.swift in Sources */,
+				EB70767D853DE86E83F7B74C /* Atrio.swiftpm/Atrio/Services/RhythmModelService.swift in Sources */,
+				27B16993311EEB87CD1E1FDC /* Atrio.swiftpm/Atrio/Services/ResearchPDFRenderer.swift in Sources */,
+				A2EDB3604530461CE233E089 /* Atrio.swiftpm/Atrio/Services/ResearchExport.swift in Sources */,
+				E117DB8BAD1E82B3FA374FAF /* Atrio.swiftpm/Atrio/Services/PulseAnalyzer.swift in Sources */,
+				A80C42FE7537697F17E33934 /* Atrio.swiftpm/Atrio/Services/MeasurementRepository.swift in Sources */,
+				FBAA77D6CBCBAC77C9826497 /* Atrio.swiftpm/Atrio/Models/PulseAnalysis.swift in Sources */,
+				0000000000000000000002D5 /* Atrio.swiftpm/Atrio/Services/PPGSignalExtractor.swift in Sources */,
+				0000000000000000000002D3 /* Atrio.swiftpm/Atrio/Services/PPGRecordingAccumulator.swift in Sources */,
+				0000000000000000000002D1 /* Atrio.swiftpm/Atrio/Services/PPGCameraService.swift in Sources */,
+				0000000000000000000002CF /* Atrio.swiftpm/Atrio/Services/OpticalPlotPoint.swift in Sources */,
+				0000000000000000000002CD /* Atrio.swiftpm/Atrio/Services/FingerDetectionService.swift in Sources */,
+				0000000000000000000002CB /* Atrio.swiftpm/Atrio/ViewModels/RecordingViewModel.swift in Sources */,
+				0000000000000000000002C9 /* Atrio.swiftpm/Atrio/Models/RecordingState.swift in Sources */,
+				0000000000000000000002C7 /* Atrio.swiftpm/Atrio/Models/PPGSample.swift in Sources */,
+				0000000000000000000002C5 /* Atrio.swiftpm/Atrio/Models/PPGRecording.swift in Sources */,
+				0000000000000000000002C3 /* Atrio.swiftpm/Atrio/Components/SignalStatusIndicator.swift in Sources */,
+				0000000000000000000002C1 /* Atrio.swiftpm/Atrio/Components/RecordingTimerView.swift in Sources */,
+				0000000000000000000002BF /* Atrio.swiftpm/Atrio/Components/LivePPGChart.swift in Sources */,
+				0000000000000000000002BD /* Atrio.swiftpm/Atrio/Views/ProcessingView.swift in Sources */,
+				000000000000000000000201 /* Atrio.swiftpm/Atrio/Views/RecordingView.swift in Sources */,
+				0000000000000000000001FF /* Atrio.swiftpm/Atrio/ViewModels/PreparationViewModel.swift in Sources */,
+				0000000000000000000001FD /* Atrio.swiftpm/Atrio/Services/CameraHardwareService.swift in Sources */,
+				0000000000000000000001FB /* Atrio.swiftpm/Atrio/Services/CameraPermissionManager.swift in Sources */,
+				0000000000000000000001F9 /* Atrio.swiftpm/Atrio/Components/FingerPlacementIllustration.swift in Sources */,
+				0000000000000000000001F7 /* Atrio.swiftpm/Atrio/Components/PreparationStepRow.swift in Sources */,
+				0000000000000000000001F5 /* Atrio.swiftpm/Atrio/Components/CameraPermissionStatusView.swift in Sources */,
+				0000000000000000000001B1 /* Atrio.swiftpm/Atrio/Components/PPGWaveformView.swift in Sources */,
+				0000000000000000000000C8 /* Atrio.swiftpm/Atrio/App/AppRootView.swift in Sources */,
+				0000000000000000000000C9 /* Atrio.swiftpm/Atrio/App/AtrioApp.swift in Sources */,
+				0000000000000000000000CA /* Atrio.swiftpm/Atrio/Components/PrimaryButton.swift in Sources */,
+				0000000000000000000000CB /* Atrio.swiftpm/Atrio/Components/SectionHeading.swift in Sources */,
+				0000000000000000000000CC /* Atrio.swiftpm/Atrio/Models/AppNavigation.swift in Sources */,
+				0000000000000000000000CD /* Atrio.swiftpm/Atrio/Theme/AppColors.swift in Sources */,
+				0000000000000000000000CE /* Atrio.swiftpm/Atrio/Theme/AppTypography.swift in Sources */,
+				0000000000000000000000CF /* Atrio.swiftpm/Atrio/ViewModels/AppNavigationModel.swift in Sources */,
+				0000000000000000000000D0 /* Atrio.swiftpm/Atrio/Views/HistoryView.swift in Sources */,
+				0000000000000000000000D1 /* Atrio.swiftpm/Atrio/Views/HomeView.swift in Sources */,
+				0000000000000000000000D2 /* Atrio.swiftpm/Atrio/Views/PreparationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		00000000000000000000000C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		00000000000000000000000D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		00000000000000000000000E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 8ZUKJDYMHJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Configuration/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Atrio;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Atrio uses your iPhone camera and flashlight to record fingertip pulse signals.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MobileAppDevelopment.CongressionalAppChallenge;
+				PRODUCT_NAME = Atrio;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		00000000000000000000000F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 8ZUKJDYMHJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Configuration/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Atrio;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Atrio uses your iPhone camera and flashlight to record fingertip pulse signals.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MobileAppDevelopment.CongressionalAppChallenge;
+				PRODUCT_NAME = Atrio;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00000000000000000000000A /* Build configuration list for PBXProject "Atrio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000000C /* Debug */,
+				00000000000000000000000D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00000000000000000000000B /* Build configuration list for PBXNativeTarget "Atrio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000000E /* Debug */,
+				00000000000000000000000F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000001 /* Project object */;
+}

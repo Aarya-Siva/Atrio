@@ -1,0 +1,6 @@
+{
+  "vectors": 1570,
+  "maximumAbsoluteError": 1.0420603691052577e-07,
+  "tolerance": 1e-05,
+  "includesRealWindowsAndFloat32ThresholdBoundaries": true
+}

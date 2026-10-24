@@ -1,0 +1,280 @@
+{
+  "version": "liu-window-xgb-v1",
+  "protocol": {
+    "version": "liu-window-xgb-v1",
+    "train_participants": [
+      "MPA_181220181216",
+      "MPA_181221154421",
+      "MPA_181221201409",
+      "MPA_190110210436",
+      "MPA_190111175619",
+      "MPA_190117190002",
+      "MPA_190117213615",
+      "MPA_190123210803",
+      "MPA_190125144407",
+      "MPA_190131125957",
+      "MPA_190201143642",
+      "MPA_190226231428",
+      "MPA_190301112515",
+      "MPA_190323102936",
+      "MPA_190328193027",
+      "MPA_190424215138",
+      "MPA_190425175811",
+      "MPA_190428200835",
+      "MPA_190505154937",
+      "MPA_190517151459",
+      "MPA_190531141145",
+      "MPA_190815123402",
+      "MPA_190830132639",
+      "MPA_190912185708",
+      "MPA_190916181717",
+      "MPA_190919193027",
+      "MPA_191008200756",
+      "MPA_191017195505",
+      "MPA_191206151431",
+      "MPA_191218194503",
+      "MPA_200821111253",
+      "MPA_200904171535",
+      "MPA_200915202846",
+      "MPA_201103133418"
+    ],
+    "validation_participants": [
+      "MPA_190103190940",
+      "MPA_190103210456",
+      "MPA_190111161158",
+      "MPA_190117165510",
+      "MPA_190124211244",
+      "MPA_190508191626",
+      "MPA_190508215047",
+      "MPA_190513230732",
+      "MPA_191011133231",
+      "MPA_200811202033",
+      "MPA_200822082444",
+      "MPA_201029183042"
+    ],
+    "test_participants": [
+      "MPA_190104135702",
+      "MPA_190111200054",
+      "MPA_190118201237",
+      "MPA_190124193317",
+      "MPA_190125182833",
+      "MPA_190212151818",
+      "MPA_190212182024",
+      "MPA_190212193426",
+      "MPA_190214211137",
+      "MPA_190215164748",
+      "MPA_190221204808",
+      "MPA_190227212849",
+      "MPA_190308163436",
+      "MPA_190314174657",
+      "MPA_190316081016",
+      "MPA_190320193334",
+      "MPA_190322150839",
+      "MPA_190322191822",
+      "MPA_190322222750",
+      "MPA_190402215211",
+      "MPA_190412153256",
+      "MPA_190423175036",
+      "MPA_190510154138",
+      "MPA_190521222106",
+      "MPA_190522081840",
+      "MPA_190530213826",
+      "MPA_190802190522",
+      "MPA_190815095502",
+      "MPA_190815174118",
+      "MPA_190824082443",
+      "MPA_190824100932",
+      "MPA_190824114119",
+      "MPA_190925182305",
+      "MPA_191025125214",
+      "MPA_191025145724",
+      "MPA_191025171230",
+      "MPA_191108175858",
+      "MPA_191114223059",
+      "MPA_191122191349",
+      "MPA_191123102150",
+      "MPA_191207121722",
+      "MPA_200710085934",
+      "MPA_200714204601",
+      "MPA_200827183815",
+      "MPA_200827220823"
+    ],
+    "lowerThreshold": 0.45545454545454545,
+    "upperThreshold": 0.895959595959596,
+    "boosting_rounds": 48,
+    "seed": 42,
+    "featureVersion": "pulse-window-v1",
+    "featureNames": [
+      "mean_interval_ms",
+      "sdnn_ms",
+      "rmssd_ms",
+      "pnn50",
+      "interval_cv"
+    ],
+    "features_sha256": "3bf308b6c325f8a35fd27741eda4d28d71dc3e079b15728935ea0c394b919701"
+  },
+  "training": {
+    "segments": 16798,
+    "afib_segments": 4712,
+    "auc": 0.9466072167575499,
+    "log_loss": 0.31831106543540955,
+    "sensitivity_at_0_5": 0.9376061120543294,
+    "specificity_at_0_5": 0.8273208671189807,
+    "confusion_at_0_5_tn_fp_fn_tp": [
+      9999,
+      2087,
+      294,
+      4418
+    ],
+    "classified_fraction": 0.584414811287058,
+    "inconclusive_fraction": 0.41558518871294203,
+    "selective_confusion_rows_true_cols_predicted": [
+      [
+        9634,
+        0
+      ],
+      [
+        183,
+        0
+      ]
+    ]
+  },
+  "development_validation": {
+    "segments": 5625,
+    "afib_segments": 2722,
+    "auc": 0.8533683263127175,
+    "log_loss": 0.40730956196784973,
+    "sensitivity_at_0_5": 0.9327700220426157,
+    "specificity_at_0_5": 0.7478470547709266,
+    "confusion_at_0_5_tn_fp_fn_tp": [
+      2171,
+      732,
+      183,
+      2539
+    ],
+    "classified_fraction": 0.4003555555555556,
+    "inconclusive_fraction": 0.5996444444444444,
+    "selective_confusion_rows_true_cols_predicted": [
+      [
+        2116,
+        0
+      ],
+      [
+        136,
+        0
+      ]
+    ]
+  },
+  "held_out_test": {
+    "segments": 22360,
+    "afib_segments": 8371,
+    "auc": 0.9406571168146272,
+    "log_loss": 0.33727964758872986,
+    "sensitivity_at_0_5": 0.973121490861307,
+    "specificity_at_0_5": 0.7806133390521124,
+    "confusion_at_0_5_tn_fp_fn_tp": [
+      10920,
+      3069,
+      225,
+      8146
+    ],
+    "classified_fraction": 0.4822898032200358,
+    "inconclusive_fraction": 0.5177101967799642,
+    "selective_confusion_rows_true_cols_predicted": [
+      [
+        10614,
+        0
+      ],
+      [
+        170,
+        0
+      ]
+    ],
+    "participant_bootstrap_95_ci": {
+      "auc": [
+        0.9004951861402697,
+        0.9698341507792131
+      ],
+      "sensitivity_at_0_5": [
+        0.9512502282323504,
+        0.9854946429706714
+      ],
+      "specificity_at_0_5": [
+        0.6974114838430858,
+        0.8574373904414381
+      ]
+    },
+    "by_original_label": {
+      "0": {
+        "retained_segments": 6858,
+        "mean_afib_score": 0.0625586286187172
+      },
+      "1": {
+        "retained_segments": 1718,
+        "mean_afib_score": 0.5446876883506775
+      },
+      "2": {
+        "retained_segments": 1653,
+        "mean_afib_score": 0.5857628583908081
+      },
+      "3": {
+        "retained_segments": 681,
+        "mean_afib_score": 0.45742371678352356
+      },
+      "4": {
+        "retained_segments": 3079,
+        "mean_afib_score": 0.25999802350997925
+      },
+      "5": {
+        "retained_segments": 8371,
+        "mean_afib_score": 0.825942873954773
+      }
+    },
+    "mean_absolute_tree_shap_log_odds": {
+      "mean_interval_ms": 0.21579769253730774,
+      "sdnn_ms": 0.03348661586642265,
+      "rmssd_ms": 0.21786284446716309,
+      "pnn50": 0.8306039571762085,
+      "interval_cv": 1.0260744094848633
+    }
+  },
+  "exclusions": {
+    "development": {
+      "1": 328,
+      "3": 227,
+      "4": 44,
+      "2": 135,
+      "5": 236,
+      "0": 50
+    },
+    "test": {
+      "1": 257,
+      "3": 230,
+      "4": 310,
+      "5": 128,
+      "2": 83,
+      "0": 16
+    }
+  },
+  "retained_by_original_test_label": {
+    "0": 6858,
+    "2": 1653,
+    "1": 1718,
+    "3": 681,
+    "4": 3079,
+    "5": 8371
+  },
+  "environment": {
+    "python": "3.14.5",
+    "xgboost": "3.4.1",
+    "numpy": "2.5.4",
+    "coremltools": "9.0"
+  },
+  "limitations": [
+    "Original validation cohort repurposed as development training/validation; this is a new experiment, not reproduction of the paper.",
+    "Held-out test metrics apply to retained 10-second source-sensor windows, not 30-second iPhone recordings.",
+    "Quality exclusions are reported by original rhythm subtype; non-AFib is not equivalent to normal rhythm.",
+    "No ECG-confirmed iPhone validation, calibrated individual risk, clinical utility or diagnostic accuracy is established.",
+    "Repository reuse/model redistribution terms need confirmation before distributing trained artifacts."
+  ]
+}
