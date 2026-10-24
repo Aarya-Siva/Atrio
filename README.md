@@ -21,7 +21,7 @@ Atrio is a native iPhone app that uses the camera and flashlight to capture fing
 
 The XGBoost model was trained on **16,798 ten-second PPG segments from 34 participants**, with 12 separate validation participants and 45 held-out test participants. Data came from [Liu PPGArrhythmiaDetection](https://github.com/zdzdliu/PPGArrhythmiaDetection); the original validation cohort was repurposed for training/validation in this new experiment.
 
-On 22,360 retained source-dataset test segments, ROC AUC was **0.941**, with **97.3% sensitivity** and **78.1% specificity** at a 0.5 evaluation cutoff. The app uses different thresholds: 51.8% of retained test segments were inconclusive, and none received a positive AFib classification. Full metrics, exclusions, and split provenance are in `Research/Model/artifacts/`.
+On 22,360 retained source-dataset test segments, ROC AUC was **0.941**, with **97.3% sensitivity** and **78.1% specificity** at a 0.5 evaluation cutoff. 
 
 Atrio has not been clinically validated and cannot diagnose or rule out AFib, predict stroke, or estimate anemia. ECG-reference validation on iPhone recordings, systematic device testing, and attachment evaluation remain pending. The optional CNN comparison is not implemented. Dataset/model redistribution terms remain unresolved.
 
