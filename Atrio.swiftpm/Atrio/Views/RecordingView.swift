@@ -27,7 +27,7 @@ struct RecordingView: View {
                 }
                 RecordingTimerView(remaining: viewModel.snapshot.remaining, progress: viewModel.snapshot.progress,
                                    hasStarted: viewModel.snapshot.state == .recording || viewModel.snapshot.state == .completed,
-                                   duration: Int(viewModel.snapshot.duration))
+                                   duration: Int(viewModel.snapshot.duration), cameraPreview: viewModel.cameraPreview)
                     .padding(.vertical, 8)
                 LivePPGChart(samples: viewModel.snapshot.samples, isRecording: viewModel.snapshot.state == .recording)
 

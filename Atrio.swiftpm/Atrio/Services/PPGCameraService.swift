@@ -1,5 +1,6 @@
 import AVFoundation
 import CoreMedia
+import CoreImage
 import Foundation
 import UIKit
 
@@ -24,6 +25,11 @@ final class PPGCameraService: NSObject, AVCaptureVideoDataOutputSampleBufferDele
     private let deviceModel: String
     private let osVersion: String
     let events: AsyncStream<PPGCameraEvent>
+    /// Display-only images from the existing capture output; never saved or exported.
+    let previewFrames: AsyncStream<CGImage>
+    private let previewContinuation: AsyncStream<CGImage>.Continuation
+    private let previewContext = CIContext(options: [.cacheIntermediates: false])
+    private var lastPreviewTime = 0.0
     private let continuation: AsyncStream<PPGCameraEvent>.Continuation
     private var session: AVCaptureSession?
     private var device: AVCaptureDevice?
@@ -55,6 +61,7 @@ final class PPGCameraService: NSObject, AVCaptureVideoDataOutputSampleBufferDele
         detector = FingerDetectionService(configuration: configuration.detection)
         collector = PPGRecordingAccumulator(duration: configuration.duration, mode: configuration.mode)
         (events, continuation) = AsyncStream.makeStream(bufferingPolicy: .bufferingNewest(1))
+        (previewFrames, previewContinuation) = AsyncStream.makeStream(bufferingPolicy: .bufferingNewest(1))
         super.init()
         continuation.onTermination = { [weak self] _ in self?.stop() }
     }
@@ -170,6 +177,7 @@ final class PPGCameraService: NSObject, AVCaptureVideoDataOutputSampleBufferDele
         guard !finished, !cancelled else { return }
         let now = Self.now
         lastArrivalHostTime = now
+        emitPreview(sampleBuffer, at: now)
         guard let frame = extractor.extract(sampleBuffer), let clock = session?.synchronizationClock else {
             if collector.state == .recording { collector.extractionFailures += 1 }
             return
@@ -220,6 +228,20 @@ final class PPGCameraService: NSObject, AVCaptureVideoDataOutputSampleBufferDele
 
     func captureOutput(_ output: AVCaptureOutput, didDrop sampleBuffer: CMSampleBuffer, from connection: AVCaptureConnection) {
         if collector.state == .recording { collector.droppedFrames += 1 }
+    }
+
+    private func emitPreview(_ buffer: CMSampleBuffer, at time: Double) {
+        // Keep rendering bounded and off the main thread. The signal extractor
+        // still receives every original frame, unaffected by display resizing.
+        guard time - lastPreviewTime >= 1 / configuration.uiUpdatesPerSecond,
+              let pixels = CMSampleBufferGetImageBuffer(buffer) else { return }
+        lastPreviewTime = time
+        let source = CIImage(cvPixelBuffer: pixels).oriented(.right)
+        let scale = 320 / max(source.extent.width, source.extent.height)
+        let thumbnail = source.transformed(by: CGAffineTransform(scaleX: scale, y: scale))
+        if let image = previewContext.createCGImage(thumbnail, from: thumbnail.extent) {
+            previewContinuation.yield(image)
+        }
     }
 
     private func lockCameraSettings() throws {
@@ -339,6 +361,8 @@ final class PPGCameraService: NSObject, AVCaptureVideoDataOutputSampleBufferDele
     }
 
     @discardableResult private func releaseResources() -> String? {
+        previewContinuation.finish()
+        previewContext.clearCaches()
         watchdog?.setEventHandler {}
         watchdog?.cancel()
         watchdog = nil

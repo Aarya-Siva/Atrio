@@ -8,6 +8,7 @@ final class RecordingViewModel {
     private(set) var snapshot = RecordingSnapshot()
     private(set) var completedRecording: PPGRecording?
     private(set) var errorMessage: String?
+    private(set) var cameraPreview: CGImage?
     private let service: PPGCameraService?
     private var started = false
     let isDevelopmentPreview: Bool
@@ -50,7 +51,20 @@ final class RecordingViewModel {
         guard !started else { return }
         started = true
         guard let service else { return }
-        defer { service.stop() }
+        let previewTask = Task { [weak self] in
+            for await image in service.previewFrames {
+                guard !Task.isCancelled else { break }
+                guard let self else { break }
+                if self.snapshot.state != .cancelled && self.snapshot.state != .failed {
+                    self.cameraPreview = image
+                }
+            }
+        }
+        defer {
+            previewTask.cancel()
+            cameraPreview = nil
+            service.stop()
+        }
         service.start()
         for await event in service.events {
             guard !Task.isCancelled else { break }
@@ -72,11 +86,15 @@ final class RecordingViewModel {
 
     func cancel() {
         service?.stop()
+        cameraPreview = nil
         completedRecording = nil
         snapshot = RecordingSnapshot(state: .cancelled, duration: snapshot.duration, message: "Unsaved recording discarded.")
     }
 
-    func releaseCamera() { service?.stop() }
+    func releaseCamera() {
+        cameraPreview = nil
+        service?.stop()
+    }
 
     deinit { service?.stop() }
 }
